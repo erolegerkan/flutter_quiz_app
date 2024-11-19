@@ -15,6 +15,7 @@ class _QuizState extends State<Quiz> {
   var activeScreen = 'start-screen';
 
   switchScreen() {
+    questions.shuffle();
     selectedAnswers = [];
     setState(() {
       activeScreen = 'question-screen';
